@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style  type="text/tailwindcss">
+      @layer components { /*Dessa forma eu consigo inserir estilo personalizado para uma única classe, nesse caso eu consigo usar a forma tailwind de definir estilo, porém também poderia usar a forma comum de usando as definições típicas do css trocando o components por utilities e não  fazendo uso do @apply */
+            .content-auto{
+             @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+            }
+  
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body class="bg-blue-100">
+    <h2 class="text-xs text-red-800">Hello word!</h2>
+    <h2 class="text-sm text-yellow-800">Hello word!</h2>
+    <h2 class="text-base">Hello word!</h2>
+    <h2 class="text-2xl">Hello word!</h2>
+    <h2 class="text-lg">Hello word!</h2>
+    <h2 class="text-lg font-bold">Hello word!</h2> <!--Se adicionarmos um número antes das siglas você também customiza apartir do tamanho já definido porém não funciona para todos apenas para alguns-->
+
+
+
+    <!-- Vejamos agora se tratando de espaçamentos como vai ficar fazendo uso do tailwind-->
+
+    <h1 class="text-xs text-clifford-200 pt-4">Hello word!</h1>
+    <h1 class="text-sm text-yellow-800">Hello word!</h1>
+    <h1 class="text-base">Hello word!</h1>
+    <h1 class="text-2xl">Hello word!</h1>
+    <h1 class="text-lg">Hello word!</h1>
+    <h1 class="text-lg font-bold">Hello word!</h1> 
+    
+
+  <!--Vejamos o uso de bordas me nosso código-->
+  <div class="m-4 bg-clifford-100  border-yellow-400">
+    <P class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, sapiente. Vitae deleniti necessitatibus iusto inventore architecto. Nemo velit recusandae, dolore impedit dignissimos totam laborum, minima explicabo, quod excepturi accusantium ut.</P>
+
+    <button class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  m-4 p-2 text-white w-28 hover:rounded-lg">Save</button>
+
+    <button class="content-auto"> hjbjnlkj </button>
+  </div>
+
+
+
+
+  <div class="container mx-auto px-4 py-8">
+    <div class=" p-2 pb-2 mb-2 shadow-md">
+      <h6 class="font-bold mb-2">Componetes input</h6>
+      <input type="" placeholder="Digite o seu nome aqui" class="bg-gray-50 border border-gray-300 focus:ring-2 focus:border-blue-500 focus:ring-opacity-50 rounded px-2 py-1 text-sm text-gray-800 placeholder-gray-300 focus:outline-none ">
+    </div>
+
+    <div class=" p-2 pb-2 mb-2 shadow-md">
+      <h6 class="font-bold mb-2">Componetes baddge</h6>
+      <div class="inline-flex item-center text-sm bg-green-200 px-1.5 py-0.5 rounded-md">
+        Ativo
+      </div>
+      <div class="inline-flex item-center text-sm bg-green-200 px-1.5 py-0.5 rounded-md">
+        Ativo
+      </div>
+    </div>
+    <div class=" p-2 pb-2 mb-2 shadow-md">
+      <div class="inline-flex item-center text-sm bg-red-200 px-1.5 py-0.5 rounded-md">
+        Inativo
+      </div>
+      <div class="inline-flex item-center text-sm bg-red-200 px-1.5 py-0.5 rounded-md">
+        Inativo
+      </div>
+    </div>
+    <div class=" p-2 pb-2 mb-2 shadow-md">
+      <div class="inline-flex item-center text-sm bg-yellow-200 px-1.5 py-0.5 rounded-md">
+        Em progresso
+      </div>
+      <div class="inline-flex item-center text-sm bg-yellow-200 px-1.5 py-0.5 rounded-md">
+        Em progresso
+      </div>
+    </div>
+
+
+    <div class=" p-2 pb-8 mb-2 shadow-md">
+      <h6 class="font-bold mb-2">Componetes button</h6>
+      <button class="text-sm bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded text-white shadow">salve</button>
+      <button class="text-sm bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white shadow">salve</button>
+      <button class="text-base bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded text-white shadow">salve</button>
+      <button class="transition rounded text-white shadow px-8 py-3 ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:border hover:border-white hover:bg-indigo-500 duration-300 ...">
+        Save Changes
+      </button>
+
+    </div>
+
+    <div>
+      <h6 class="font-bold mb-2">Componetes card</h6>
+
+      <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
+
+        <div class="w-full bg-gray-100 dark:bg-gray-900 p-4 border-b border-gray-200 dark:border-gray-500">
+          <h1 class="font-semibold dark:text-gray-50">Título do card</h1>
+        </div>
+
+        <div class="p-4 dark:text=gray-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum necessitatibus iure praesentium iusto nostrum veritatis itaque rerum fugit nisi ratione? Nostrum quasi corrupti nulla architecto inventore voluptate doloribus quis? Excepturi?
+        </div>
+
+        <div class="w-full bg-gray-50 dark:bg-gray-900 p-4 border-t border-gray-200">
+          <h1 class="font-semibold dark:text-gray-50">Título do rodapé</h1>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+<script src="./tailwind.config.js"></script>
+</html>

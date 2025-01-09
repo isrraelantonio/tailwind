@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+    <style  type="text/tailwindcss">
+        @layer components {
+              .conteudonav{
+               @apply text-gray-300 text-xs md:text-sm hover:text-orange-500;
+              }
+              .alinhamento{
+                @apply flex-row items-center ;
+              }
+    
+          }
+      </style>
+    </head>
+    <body class=" w-screen h-screen p-0 m-0">
+    
+    <!-- começaremos com o nosso menu de navegação-->
+     <div class="conteiner h-24 bg-blue-100 flex flex-row grow shirnk ">
+        <!--Logo-->
+        <div class="w-2/5 flex flex-row space-x-2 h-full items-center justify-center">
+            <img src="./imagens/ilha2.png" alt="" class="h-20"> <h1 class="md:text-2xl font-bold  text-indigo-900">ilhas mar</h1>
+    
+        </div>
+        <!--Menu de navegação-->
+        <nav class="w-3/5 bg-indigo-900">
+            <ul class=" h-full flex flex-row items-center justify-center  grow shirnk space-x-4 md:space-x-8">
+                <li class="conteudonav"><a href="">Conhecanos</a></li>
+                <li class="conteudonav"><a href="">Informações</a></li>
+                <li class="conteudonav"><a href="">Contato</a></li>
+                <li class="conteudonav"><a href="">redes</a></li>
+            </ul>
+    
+        </nav>
+    </div>
+    
+    <!--Agora está na hora de fazermos o nosso head como a imagem característica do site.-->
+    
+    <header class="h-80 bg-blue-500 bg-no-repeat bg-cover bg-bottom "  style="background-image: url(./imagens/hotel.jpg) ;">
+        <div class="h-full  w-full bg-indigo-900 bg-opacity-50 alinhamento flex flex-col space-y-4 ">
+            <div class="flex flex-col alinhamento">
+                <H2 class="text-orange-500 text-4xl mt-9 font-bold">Onde você quer ir?</H2>
+                        <p class="text-white ">Escolha o estado e cidade para encontrar os melhores resorts</p>
+                        <img src="./imagens/ilha2.png" alt="" class="h-24 mt-2 rounded-full ring">
+            </div>
+            <div class="flex w-full mt-20 justify-center items-center">
+                <form action="" class="grid grid-cols-2 gap-2 md:flex md:w-full md:space-x-1 md:justify-center ">
+                    <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
+                        <option value="">Escolha o estado</option>
+                    </select>
+                    <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
+                        <option value="">Escolha a cidade</option>
+                    </select>
+                    <button class=" col-span-2 w-3/7 text-orange-900 bg-orange-500 text-sm px-3 py-2 rounded flex flex-nowrap  items-center justify-center space-x-2  hover:bg-yellow-500"><i class="fa-solid fa-magnifying-glass mt-1"></i><h2>Pesquisar resorts</h2></button>
+                </form>
+            </div>
+        </div>
+    
+    </header>
+    <article class="flex flex-col p-3 grow shirnk lg:flex-row lg:w-5/6 m-auto mt-5">
+          
+        <div class="mb-2 p-5 lg:w-3/6 flex items-center justify-center lg:order-2">
+               <img src="./imagens/piscina.jpg" style="height: 400px;" alt="">
+            </div>
+
+
+            <div class=" p-8 md:w-4/5 md:m-auto lg:w-4/6 text-sm text-gray-500 space-y-6">
+                <h3>RESORT EM DESTAQUE</h3>
+                <h2 class="text-2xl text-indigo-900">Ecoresort Praia do Fort Bahia</h2>
+                <h3>Hotel qualidade 5 estrelas</h3>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem officia tempora similique modi dicta, architecto vel dolore, accusamus aliquid explicabo dignissimos sapiente illo placeat hic! Mollitia excepturi optio quam eveniet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ratione laudantium odio illo nobis temporibus dolore officia voluptas inventore vero ad dicta tempora vel repellat quasi id, minus nemo commodi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, voluptas dolore! Qui vel aliquid quod eligendi. Ab, dolore corrupti tenetur illo commodi ducimus. Illum maiores placeat aperiam nisi aliquid neque?
+                </p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptatem voluptate, cupiditate aliquid, at mollitia architecto aliquam nihil doloribus ad vero? Accusantium eveniet, laboriosam a est inventore repellendus natus eligendi?
+                </p>
+                <button class=" m-auto md:m-0 mt-5 w-3/6 text-orange-900 bg-orange-500 text-sm px-3 py-2 rounded flex flex-nowrap  items-center justify-center space-x-2 hover:bg-yellow-500"><i class="fa-solid fa-magnifying-glass mt-1"></i><h2>Pesquisar resorts</h2></button>
+                
+
+
+            </div>
+    </article>
+    <article>
+            <h1 class="w-full text-center text-2xl font-bold text-indigo-900 p-6">Conheça outros resorts</h1>
+            <div class="w-full p-2 500 h-auto flex flex-col lg:flex-row grow shirnk lg:space-x-2 lg:w-4/5 lg:m-auto">
+        
+                <div class="flex h-80 w-4/5 m-auto lg:w-1/2 bg-cover mb-2 lg:mb-0 bg-center "  style="background-image: url(./imagens/piscina.jpg);">
+                    <div class="flex h-20 w-full self-end bg-gradient-to-t from-indigo-900 to-indigo-500 to-transparent">
+                        <h4 class="self-end p-4 text-white hover:text-orange-400 text-xs md:text-sm ">Resort ecológico</h4>
+                    </div>
+                </div>
+                <div class="flex flex-col h-auto  w-4/5 m-auto lg:h-80 lg:w-1/2 ">
+                    <div class="flex flex-row h-40 mb-1  space-x-1 lg:order-2 lg:mt-1">
+                        <div class="flex w-1/2 h-full bg-cover bg-center" style="background-image: url(./imagens/lugar.jpg);">
+
+                            <div class="flex h-20 w-full self-end bg-gradient-to-t from-indigo-900 to-indigo-500 to-transparent">
+                                <h4 class="self-end p-4 text-white hover:text-orange-400 text-xs md:text-sm ">Resort ecológico</h4>
+                            </div>
+        
+                        </div>
+                        <div class="flex w-1/2 h-full bg-cover bg-center" style="background-image: url(./imagens/pésdecoco.jpg);">
+                            <div class="flex h-20 w-full self-end bg-gradient-to-t from-indigo-900 to-indigo-500 to-transparent">
+                                <h4 class="self-end p-4 text-white hover:text-orange-400 text-xs md:text-sm ">Resort ecológico</h4>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="flex w-ful h-60 bg-cover bg-center lg:bg-bottom" style="background-image: url(./imagens/cadeiras.jpg);">
+                        <div class="flex h-20 w-full self-end bg-gradient-to-t from-indigo-900 to-indigo-500 to-transparent">
+                            <h4 class="self-end p-4 text-white hover:text-orange-400 text-xs md:text-sm ">Resort ecológico</h4>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="flex w-full mt-5 justify-center items-center">
+                <form action="" class="grid grid-cols-2 gap-2 md:flex md:w-full md:space-x-1 md:justify-center ">
+                    <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
+                        <option value="">Escolha o estado</option>
+                    </select>
+                    <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
+                        <option value="">Escolha a cidade</option>
+                    </select>
+                    <button class=" col-span-2 w-3/7 text-orange-900 bg-orange-500 text-sm px-3 py-2 rounded flex flex-nowrap  items-center justify-center space-x-2 hover:bg-yellow-500"><i class="fa-solid fa-magnifying-glass mt-1"></i><h2>Pesquisar resorts</h2></button>
+                </form>
+            </div>
+            
+    </article>
+    <div class="conteiner h-24 bg-indigo-900 flex flex-row grow shirnk mt-9">
+        <!--Logo-->
+        <div class="w-1/5 flex flex-row space-x-2 h-full items-center justify-center">
+            <img src="./imagens/ilha2.png" alt="" class="h-20 ring border rounded-full">
+    
+        </div>
+        <!--Menu de navegação-->
+        <nav class="w-3/5">
+            <ul class=" h-full  flex flex-row items-center mr-0 grow shirnk space-x-4 md:space-x-8">
+                <li class="conteudonav"><a href="">instagram</a></li>
+                <li class="conteudonav"><a href="">facebook</a></li>
+                <li class="conteudonav"><a href="">tik tok</a></li>
+                <li class="conteudonav"><a href="">nossos contatos</a></li>
+            </ul>
+    
+        </nav>
+    </div>
+
+
+</body>
+</html>
