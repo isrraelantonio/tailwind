@@ -22,15 +22,15 @@
     <body class=" w-screen h-screen p-0 m-0">
     
     <!-- começaremos com o nosso menu de navegação-->
-     <div class="conteiner h-24 bg-blue-100 flex flex-row grow shirnk ">
+     <div class="conteiner h-20 bg-blue-100 flex flex-row grow shirnk ">
         <!--Logo-->
         <div class="w-2/5 flex flex-row space-x-2 h-full items-center justify-center">
-            <img src="./imagens/ilha2.png" alt="" class="h-20"> <h1 class="md:text-2xl font-bold  text-indigo-900">ilhas mar</h1>
+            <img src="./imagens/ilha2.png" alt="" style="height: 50px;"> <h1 class="md:text-2xl font-bold  text-indigo-900">ilhas mar</h1>
     
         </div>
         <!--Menu de navegação-->
         <nav class="w-3/5 bg-indigo-900">
-            <ul class=" h-full flex flex-row items-center justify-center  grow shirnk space-x-4 md:space-x-8">
+            <ul class=" h-full flex flex-row flex-wrap items-center justify-center  grow shirnk space-x-4 md:space-x-8">
                 <li class="conteudonav"><a href="">Conhecanos</a></li>
                 <li class="conteudonav"><a href="">Informações</a></li>
                 <li class="conteudonav"><a href="">Contato</a></li>
@@ -42,23 +42,25 @@
     
     <!--Agora está na hora de fazermos o nosso head como a imagem característica do site.-->
     
-    <header class="h-auto bg-blue-500 bg-no-repeat bg-cover bg-bottom "  style="background-image: url(./imagens/hotel.jpg) ;">
-        <div class="h-full  w-full bg-indigo-900 bg-opacity-50 alinhamento flex flex-col space-y-4 ">
-            <div class="flex flex-col alinhamento grow shirnk">
-                <H2 class="text-orange-500 text-4xl font-bold">Onde você quer ir?</H2>
-                        <p class="text-white ">Escolha o estado e cidade para encontrar os melhores resorts</p>
-                        <img src="./imagens/ilha2.png" alt="" class="h-24 mt-2 rounded-full ring">
-            </div>
-            <div class="flex w-full mt-20 justify-center items-center">
-                <form action="" class="grid grid-cols-2 gap-2 md:flex md:w-full md:space-x-1 md:justify-center ">
-                    <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
-                        <option value="">Escolha o estado</option>
-                    </select>
-                    <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
-                        <option value="">Escolha a cidade</option>
-                    </select>
-                    <button class=" col-span-2 w-3/7 text-orange-900 bg-orange-500 text-sm px-3 py-2 rounded flex flex-nowrap  items-center justify-center space-x-2  hover:bg-yellow-500"><i class="fa-solid fa-magnifying-glass mt-1"></i><h2>Pesquisar resorts</h2></button>
-                </form>
+    <header class="h-96 bg-blue-500 bg-no-repeat bg-cover bg-bottom flex justify-center "  style="background-image: url(./imagens/hotel.jpg) ;">
+        <div class=" w-full bg-indigo-900 bg-opacity-50  flex items-center justify-center flex-col ">
+            <div class="flex flex-col space-y-6">
+                <div class="flex  w-full flex-col items-center justify-center grow shirnk">
+                    <H2 class="text-orange-500 text-4xl font-bold">Onde você quer ir?</H2>
+                            <p class="text-white text-center p-3">Escolha o estado e cidade para encontrar os melhores resorts</p>
+                            <img src="./imagens/ilha2.png" alt="" class="h-20 mt-2 rounded-full ring">
+                </div>
+                <div class="flex h-1/5  w-full justify-center ">
+                    <form action="" class="grid grid-cols-2 gap-2 md:flex md:w-full md:space-x-1 md:justify-center ">
+                        <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
+                            <option value="">Escolha o estado</option>
+                        </select>
+                        <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
+                            <option value="">Escolha a cidade</option>
+                        </select>
+                        <button class=" col-span-2 w-3/7 text-orange-900 bg-orange-500 text-sm px-3 py-2 rounded flex flex-nowrap  items-center justify-center space-x-2  hover:bg-yellow-500"><i class="fa-solid fa-magnifying-glass mt-1"></i><h2>Pesquisar resorts</h2></button>
+                    </form>
+                </div>
             </div>
         </div>
     
