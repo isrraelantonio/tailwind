@@ -24,6 +24,71 @@
               }
     
           }
+
+        #imagem{
+            animation: image2 9s ease-in-out;
+            animation-timeline: view();
+            animation-range: cover 0% cover 50%;
+        }
+
+        #conteudo{
+            animation-name: apper; 
+            animation-timeline: view(); 
+            animation-duration: 7s;
+            animation-range: cover 0% cover 50%; 
+
+        }
+
+        @keyframes apper{
+    from{ /*Aqui é de onde devem partir as configurações */
+        opacity: 0;
+        filter: blur(100%);
+       transform: translateX(-100%);
+      
+       
+       
+    }
+    to{ /*Aqui é  até devem ir as configurações */
+        opacity: 1;
+        transform: translateX(0);
+       
+    }
+}
+
+          @keyframes image2{
+    
+    0%{ 
+        opacity: 0;
+        clip-path: inset(100% 100% 100% 100%);
+        
+       
+    }
+    20%{ 
+        opacity: 0;
+        clip-path: inset(70% 70% 70% 70%);
+      
+    }
+
+    40%{ 
+    opacity: 0;
+    clip-path: inset(50% 50% 50% 50%);
+   
+   
+    }
+    60%{ 
+    opacity: 0;
+    clip-path: inset(40% 40% 40% 40%);
+    
+    }
+
+    100%{
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+    
+
+    }
+}
+          
       </style>
     </head>
     <body class=" w-screen h-screen p-0 m-0">
@@ -93,12 +158,12 @@
     </header>
     <article class="flex flex-col p-3 grow shirnk lg:flex-row lg:w-5/6 m-auto mt-5">
           
-        <div class="mb-2 p-5 lg:w-3/6 flex items-center justify-center lg:order-2">
+        <div class="mb-2 p-5 lg:w-3/6 flex items-center justify-center lg:order-2" id="imagem">
                <img src="./imagens/piscina.jpg" style="height: 400px;" alt="">
             </div>
 
 
-            <div class=" p-8 md:w-4/5 md:m-auto lg:w-4/6 text-sm text-gray-500 space-y-6">
+            <div class=" p-8 md:w-4/5 md:m-auto lg:w-4/6 text-sm text-gray-500 space-y-6" id="conteudo">
                 <h3>RESORT EM DESTAQUE</h3>
                 <h2 class="text-2xl text-indigo-900">Ecoresort Praia do Fort Bahia</h2>
                 <h3>Hotel qualidade 5 estrelas</h3>
@@ -148,7 +213,7 @@
         
                 </div>
             </div>
-            <div class="flex w-full mt-5 justify-center items-center">
+            <div class="flex w-full mt-5 justify-center items-center" >
                 <form action="" class="grid grid-cols-2 gap-2 md:flex md:w-full md:space-x-1 md:justify-center ">
                     <select name="" id="" class=" w-2/7 bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 text-sm focus:outline-none">
                         <option value="">Escolha o estado</option>
